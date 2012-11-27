@@ -11,12 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-/*
-*= require twitter/bootstrap
-*/
-
-.shift-down {
-	margin-top: 100px;
-	
-}
