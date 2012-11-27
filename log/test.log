@@ -1,0 +1,390 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:33:04', '2012-11-27 16:33:04')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:33:04', '2012-11-27 16:33:04')
+SQLite3::ConstraintException: PRIMARY KEY must be unique: INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:33:04', '2012-11-27 16:33:04')
+  [1m[36m (38.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:33:25', '2012-11-27 16:33:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:33:25', '2012-11-27 16:33:25')
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:33:56', '2012-11-27 16:33:56')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:33:56', '2012-11-27 16:33:56')
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (6.7ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:34:32', '2012-11-27 16:34:32')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:34:32', '2012-11-27 16:34:32')
+  [1m[36m (12.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products" 
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"id"=>"1", "title"=>"Lorem Ipsum", "description"=>"Wibbles are fun!", "image_url"=>"lorem.jpg", "price"=>"19.95", "amount_online"=>"2", "amount_store"=>"2", "category"=>"Pony"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "products" ("amount_online", "amount_store", "category", "created_at", "description", "id", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["amount_online", 2], ["amount_store", 2], ["category", "Pony"], ["created_at", Tue, 27 Nov 2012 16:34:32 UTC +00:00], ["description", "Wibbles are fun!"], ["id", 1], ["image_url", "lorem.jpg"], ["price", #<BigDecimal:7f81789fadc0,'0.1995E2',18(18)>], ["title", "Lorem Ipsum"], ["updated_at", Tue, 27 Nov 2012 16:34:32 UTC +00:00]]
+SQLite3::ConstraintException: PRIMARY KEY must be unique: INSERT INTO "products" ("amount_online", "amount_store", "category", "created_at", "description", "id", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "products" WHERE "products"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products" 
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered products/_form.html.erb (7.5ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" 
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"id"=>"1", "title"=>"Lorem Ipsum", "description"=>"Wibbles are fun!", "image_url"=>"lorem.jpg", "price"=>"19.95", "amount_online"=>"2", "amount_store"=>"2", "category"=>"Pony"}, "id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "products" SET "title" = 'Lorem Ipsum', "description" = 'Wibbles are fun!', "image_url" = 'lorem.jpg', "price" = 19.95, "amount_online" = 2, "amount_store" = 2, "category" = 'Pony', "updated_at" = '2012-11-27 16:34:33.045032' WHERE "products"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (3.8ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:35:01', '2012-11-27 16:35:01')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:35:01', '2012-11-27 16:35:01')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products" 
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"id"=>"10", "title"=>"Lorem Ipsum", "description"=>"Wibbles are fun!", "image_url"=>"lorem.jpg", "price"=>"19.95", "amount_online"=>"2", "amount_store"=>"2", "category"=>"Pony"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "products" ("amount_online", "amount_store", "category", "created_at", "description", "id", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["amount_online", 2], ["amount_store", 2], ["category", "Pony"], ["created_at", Tue, 27 Nov 2012 16:35:01 UTC +00:00], ["description", "Wibbles are fun!"], ["id", 10], ["image_url", "lorem.jpg"], ["price", #<BigDecimal:7fa6505fcff0,'0.1995E2',18(18)>], ["title", "Lorem Ipsum"], ["updated_at", Tue, 27 Nov 2012 16:35:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/10
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products" 
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "products" 
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+  [1m[35m (3.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered products/_form.html.erb (7.0ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" [0m
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"id"=>"10", "title"=>"Lorem Ipsum", "description"=>"Wibbles are fun!", "image_url"=>"lorem.jpg", "price"=>"19.95", "amount_online"=>"2", "amount_store"=>"2", "category"=>"Pony"}, "id"=>"1"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "products" SET "title" = 'Lorem Ipsum', "description" = 'Wibbles are fun!', "image_url" = 'lorem.jpg', "price" = 19.95, "amount_online" = 2, "amount_store" = 2, "category" = 'Pony', "updated_at" = '2012-11-27 16:35:01.994955' WHERE "products"."id" = 10
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/10
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:41:46', '2012-11-27 16:41:46')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:41:46', '2012-11-27 16:41:46')
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:41:48', '2012-11-27 16:41:48')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:41:48', '2012-11-27 16:41:48')
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products" 
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"id"=>"10", "title"=>"Lorem Ipsum", "description"=>"Wibbles are fun!", "image_url"=>"lorem.jpg", "price"=>"19.95", "amount_online"=>"2", "amount_store"=>"2", "category"=>"Pony"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (39.9ms)[0m  INSERT INTO "products" ("amount_online", "amount_store", "category", "created_at", "description", "id", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["amount_online", 2], ["amount_store", 2], ["category", "Pony"], ["created_at", Tue, 27 Nov 2012 16:41:48 UTC +00:00], ["description", "Wibbles are fun!"], ["id", 10], ["image_url", "lorem.jpg"], ["price", #<BigDecimal:7fba3089f2f0,'0.1995E2',18(18)>], ["title", "Lorem Ipsum"], ["updated_at", Tue, 27 Nov 2012 16:41:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/10
+Completed 302 Found in 45ms (ActiveRecord: 40.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products" 
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products" 
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/products
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered products/_form.html.erb (10.1ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" [0m
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+Processing by ProductsController#update as HTML
+  Parameters: {"product"=>{"id"=>"10", "title"=>"Lorem Ipsum", "description"=>"Wibbles are fun!", "image_url"=>"lorem.jpg", "price"=>"19.95", "amount_online"=>"2", "amount_store"=>"2", "category"=>"Pony"}, "id"=>"1"}
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "products" SET "title" = 'Lorem Ipsum', "description" = 'Wibbles are fun!', "image_url" = 'lorem.jpg', "price" = 19.95, "amount_online" = 2, "amount_store" = 2, "category" = 'Pony', "updated_at" = '2012-11-27 16:41:48.610329' WHERE "products"."id" = 10
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/products/10
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:42:23', '2012-11-27 16:42:23')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:42:23', '2012-11-27 16:42:23')
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:42:34', '2012-11-27 16:42:34')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:42:34', '2012-11-27 16:42:34')
+  [1m[36m (72.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:43:12', '2012-11-27 16:43:12')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:43:12', '2012-11-27 16:43:12')
+  [1m[36m (41.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:43:57', '2012-11-27 16:43:57')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:43:57', '2012-11-27 16:43:57')
+  [1m[36m (48.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:44:07', '2012-11-27 16:44:07')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:44:07', '2012-11-27 16:44:07')
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:44:45', '2012-11-27 16:44:45')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:44:45', '2012-11-27 16:44:45')
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:01', '2012-11-27 16:45:01')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:01', '2012-11-27 16:45:01')
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:23', '2012-11-27 16:45:23')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:23', '2012-11-27 16:45:23')
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:43', '2012-11-27 16:45:43')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:43', '2012-11-27 16:45:43')
+  [1m[36m (41.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:57', '2012-11-27 16:45:57')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 16:45:57', '2012-11-27 16:45:57')
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:39:12', '2012-11-27 19:39:12')[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:39:12', '2012-11-27 19:39:12')
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:39:39', '2012-11-27 19:39:39')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:39:39', '2012-11-27 19:39:39')
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:45:45', '2012-11-27 19:45:45')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:45:45', '2012-11-27 19:45:45')
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (1, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:48:03', '2012-11-27 19:48:03')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "products" ("id", "title", "description", "image_url", "price", "category", "amount_online", "amount_store", "created_at", "updated_at") VALUES (2, 'MyString', 'MyText', 'MyString', 9.99, 'MyString', 1, 1, '2012-11-27 19:48:03', '2012-11-27 19:48:03')
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
