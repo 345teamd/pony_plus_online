@@ -3,6 +3,16 @@ require 'test_helper'
 class ProductsControllerTest < ActionController::TestCase
   setup do
     @product = products(:one)
+    @update ={
+      id: 1000,
+      title: 'Lorem Ipsum',
+      description: 'Wibbles are fun!',
+      image_url: "lorem.jpg",
+      price: 19.95,
+      category: 'pony',
+      amount_online: 1,
+      amount_store: 2
+    }
   end
 
   test "should get index" do
@@ -18,14 +28,14 @@ class ProductsControllerTest < ActionController::TestCase
 
   test "should create product" do
     assert_difference('Product.count') do
-      post :create, product: { amount_online: @product.amount_online, amount_store: @product.amount_store, category: @product.category, description: @product.description, id: @product.id, image_url: @product.image_url, price: @product.price, title: @product.title }
+      post :create, product: @update
     end
 
     assert_redirected_to product_path(assigns(:product))
   end
 
   test "should show product" do
-    get :show, id: @product
+    put :update, id: @product.to_param, product: @update
     assert_response :success
   end
 

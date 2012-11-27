@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.8'
 
@@ -23,8 +23,11 @@ end
 
 gem 'jquery-rails'
 
-gem 'therubyracer'
+gem 'therubyracer', :platform => :ruby
 
+group :production do
+  gem 'mysql2'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -39,3 +42,8 @@ gem 'therubyracer'
 
 # To use debugger
 # gem 'debugger'
+gem 'rubber'
+gem 'open4'
+gem 'gelf'
+gem 'graylog2_exceptions', :git => 'git://github.com/wr0ngway/graylog2_exceptions.git'
+gem 'graylog2-resque'
