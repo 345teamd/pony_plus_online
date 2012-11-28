@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
+  <title>PonyPlus Online</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <!-- START_HIGHLIGHT -->
-<body class='<%= controller.controller_name %>'>
+<body>
 <!-- END_HIGHLIGHT -->
-
-<%= yield %>
-
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="<%= store_path %>">PonyPlus Online</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><a href="<%= products_path%>">Products</a></li>
+      					<li><a href="#">link2</a></li>
+						<li><a href="#">link3</a></li>
+      					<li><a href="#">link4</a></li>
+					</ul>
+					<p class="navbar-text pull-right"><a data-toggle="modal" href="#login">Login</a></p>
+					<p class="navbar-text pull-right" id="search">&nbsp;&nbsp;</p>
+					<form class="navbar-search pull-right" id="search">
+						<div class="input-prepend">
+							<input type="text" class="search-query"placeholder="Search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!---------------Login-------------->
+	<div class="modal hide fade" id="login">
+		<div class="modal-header">
+	   		<a class="close" data-dismiss="modal">×</a>
+    		<h3>Login</h3>
+  		</div>
+  		<div class="modal-body" id="logbody">
+  			<div class="row">
+  				<div class="span3">
+    			<form class="form-vertical">
+  					<input type="text" class="input" placeholder="Username or Email">
+  					<br>
+  					<input type="password" class="input" placeholder="Password">
+  					<label class="checkbox">
+    					<input type="checkbox">Remember me on this computer
+    				</label>
+  					<button type="submit" class="btn btn-primary">Sign in</button>
+				</form>
+				</div>
+				<div class="span2">
+				<img src="img/generic-logo3.png"/>
+				</div>
+			</div>
+			<b>Help: </b><a href="#"><u>I forgot my username or password</u></a>
+			
+  		</div>
+  		<div class="modal-footer">
+    		Don't have an account <a href="#"><u>Sign up Today</u></a>
+			<a href="#" class="btn btn-danger" data-dismiss="modal">Close</a>
+  		</div>
+	</div>
+	
+	<div class="container getdown">
+		<div class="row">
+			<div class="span2 left-column">
+				Left
+			</div>
+			<div class="span8 <%= controller.controller_name %>">
+			<%= yield %>
+			
+			</div>
+			<div class="span2 right-column">
+				Right
+			</div>
+		</div>
+	</div>
 </body>
 </html>

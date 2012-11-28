@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+
+.getdown{
+	margin-top: 40px;
+}
+
+.left-column{
+	background: purple;
+	color: white;
+
+}
+
+.right-column{
+	
+	background: purple;
+	color: white;
+	
+}

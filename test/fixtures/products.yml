@@ -20,4 +20,12 @@ two:
   amount_online: 1
   amount_store: 1
 
-  
+pretty_pony:
+  id: 3
+  title: Pretty Pony
+  description: this pony is soooo pretty
+  image_url: pretty.jpg
+  price: 100
+  category: pony
+  amount_online: 2
+  amount_store: 4
