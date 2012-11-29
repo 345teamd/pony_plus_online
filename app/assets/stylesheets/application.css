@@ -13,7 +13,7 @@
  */
 
 .getdown{
-	margin-top: 40px;
+	margin-top: 50px;
 }
 
 .left-column{
@@ -23,8 +23,20 @@
 }
 
 .right-column{
-	
 	background: purple;
 	color: white;
-	
+}
+
+
+input {
+	font-size: small;
+}
+
+#cart {
+	padding: 5px;
+}
+#cart table {
+	border-top: 1px dotted white;
+	border-bottom: 1px dotted white;
+	margin-bottom: 10px;
 }

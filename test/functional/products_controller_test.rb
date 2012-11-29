@@ -12,7 +12,7 @@ class ProductsControllerTest < ActionController::TestCase
   setup do
     @product = products(:one)
     @update = {
-      id:          10,
+      featured:    0,
       title:       'Lorem Ipsum',
       description: 'Wibbles are fun!',
       image_url:   'lorem.jpg',
@@ -62,12 +62,12 @@ class ProductsControllerTest < ActionController::TestCase
    # ...
 
    test "should destroy product" do
-     assert_difference('Product.count', -1) do
-       delete :destroy, id: @product.to_param
-     end
+      assert_difference('Product.count', -1) do
+        delete :destroy, id: @product
+      end
 
-     assert_redirected_to products_path
-   end
+      assert_redirected_to products_path
+    end
   
     
 end
