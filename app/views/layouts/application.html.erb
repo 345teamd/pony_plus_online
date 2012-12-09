@@ -18,12 +18,27 @@
 				<a class="brand" href="<%= store_path %>">PonyPlus Online</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li><a href="<%= products_path%>">Products</a></li>
-      					<li><a href="#">link2</a></li>
-						<li><a href="#">link3</a></li>
-      					<li><a href="#">link4</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Categories
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a tabindex="-1" href="#">Ponies</a></li>
+									<li><a tabindex="-1" href="#">Accessories</a></li>
+									<li><a tabindex="-1" href="#">Movies</a></li>
+									<li><a tabindex="-1" href="#">Games</a></li>
+									<li><a tabindex="-1" href="#">Clothing</a></li>
+								</ul>
+							</li>
+						<% if session[:user_id] %>
+							<li><a href="<%= products_path%>">Products</a></li>
+      						<li><a href="<%= orders_path%>">Orders</a></li>
+							<li><a href="<%= users_path%>">Users</a></li>
+      						<li><%=button_to 'Logout', logout_path, method: :delete %></li>
+						<% end %>
 					</ul>
-					<p class="navbar-text pull-right"><a data-toggle="modal" href="#login">Login</a></p>
+					<p class="navbar-text pull-right"><a data-toggle="modal" href="<%=login_path%>">Login</a></p>
 					<p class="navbar-text pull-right" id="search">&nbsp;&nbsp;</p>
 					<form class="navbar-search pull-right" id="search">
 						<div class="input-prepend">
@@ -69,26 +84,16 @@
 	
 	<div class="container getdown">
 		<div class="row">
-			<div class="span2 left-column">
-				<h4>Categories</h4>
-				<ul>
-					<li>Ponies</li>
-					<li>Accessories</li>
-					<li>Movies</li>
-					<li>Games</li>
-					<li>Clothing</li>
-				</ul>
-			</div>
-			<div class="span7 <%= controller.controller_name %>">
-			<%= yield %>
-			
-			</div>
 			<div class="span3 right-column">
 				<% if @cart %>
 					<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
 						<%= render @cart %>
 					<% end %>
 				<% end %>
+			</div>
+			<div class="span9 <%= controller.controller_name %>">
+			<%= yield %>
+			
 			</div>
 		</div>
 	</div>
