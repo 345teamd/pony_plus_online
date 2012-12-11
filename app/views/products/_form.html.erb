@@ -11,32 +11,36 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :title %><br />
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label :description %>
     <%= f.text_area :description, rows: 6 %>
   </div>
   <div class="field">
-    <%= f.label :image_url %><br />
+    <%= f.label :image_url %>
     <%= f.text_field :image_url %>
   </div>
   <div class="field">
-    <%= f.label :price %><br />
+    <%= f.label :price %>
     <%= f.text_field :price %>
   </div>
   <div class="field">
-    <%= f.label :category %><br />
+    <%= f.label :category %>
     <%= f.text_field :category %>
   </div>
   <div class="field">
-    <%= f.label :amount_online %><br />
+    <%= f.label :amount_online %>
     <%= f.number_field :amount_online %>
   </div>
   <div class="field">
-    <%= f.label :amount_store %><br />
+    <%= f.label :amount_store %>
     <%= f.number_field :amount_store %>
+  </div>
+  <div class="field">
+	<%= f.label :featured%>
+	<%= f.check_box :featured %>
   </div>
   <div class="actions">
     <%= f.submit %>

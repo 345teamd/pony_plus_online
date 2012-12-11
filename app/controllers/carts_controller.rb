@@ -67,7 +67,7 @@ class CartsController < ApplicationController
 
     respond_to do |format|
       if @cart.update_attributes(params[:cart])
-        format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
+        format.html { redirect_to store_url, notice: 'Cart was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
