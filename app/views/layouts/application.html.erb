@@ -35,10 +35,14 @@
 							<li><a href="<%= products_path%>">Products</a></li>
       						<li><a href="<%= orders_path%>">Orders</a></li>
 							<li><a href="<%= users_path%>">Users</a></li>
-      						<li><%=button_to 'Logout', logout_path, method: :delete %></li>
 						<% end %>
 					</ul>
-					<p class="navbar-text pull-right"><a data-toggle="modal" href="<%=login_path%>">Login</a></p>
+					<p class="navbar-text pull-right">
+						<% if session[:user_id] %>
+							<%= link_to 'logout', logout_path, method: :delete %>
+						<%else%>
+							<%= link_to 'login', login_path%>
+						<%end%>
 					<p class="navbar-text pull-right" id="search">&nbsp;&nbsp;</p>
 					
 					<form class="navbar-search pull-right" id="search" action="<%= store_search_path%>">

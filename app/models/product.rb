@@ -1,6 +1,7 @@
 class Product < ActiveRecord::Base
   attr_accessible :featured, :amount_online, :amount_store, :category, :description, :image_url, :price, :title
   
+  has_many :reviews
   has_many :line_items
   has_many :orders, through: :line_items
   

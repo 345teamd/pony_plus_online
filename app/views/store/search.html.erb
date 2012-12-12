@@ -8,15 +8,18 @@
   <div class="entry">
 	
     <%= image_tag(product.image_url) %>
-    <h3><%= product.title %></h3>
+    <h3><%= link_to product.title, product %>
+		<%if product.amount_online == 0%>
+		(In Store Only)
+		<%end%>
+	</h3>
     <%= sanitize(product.description) %>
 
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
 	  <%= button_to 'Add to Cart', line_items_path(product_id: product),
 	 	remote: true %>
+	  Avearage Rating: <%= average_rating(product)%>/10
     </div>
   </div>
 <% end %>
-
-<p><%= will_paginate @products %></p>

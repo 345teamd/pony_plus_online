@@ -553,3 +553,17 @@ Product.create(
   amount_store: 1,
   featured: 0
   )
+  
+Product.create(
+  title: 'My Little Pony Board Game',
+  description:
+  %{<p>
+      Little Ponies unite to save all the happiness in the world. Neighhhhh! We say as we ride to battle against the pure evil!
+    </p>},
+  image_url: 'board_game.jpg',
+  category: 'Game',
+  amount_online: 0,
+  amount_store: 1,
+  featured: 1
+
+)

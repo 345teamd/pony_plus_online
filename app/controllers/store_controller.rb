@@ -34,6 +34,5 @@ class StoreController < ApplicationController
   def search
     @cart = current_cart
     @products= Product.search(params[:search])
-    @products = Product.paginate page: params[:page], per_page: 7
   end
 end

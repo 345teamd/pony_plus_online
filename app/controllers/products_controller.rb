@@ -1,9 +1,11 @@
 class ProductsController < ApplicationController
+  skip_before_filter :authorize, only: [:show]
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
-
+    @products = Product.paginate page: params[:page],
+      per_page: 7
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -14,7 +16,8 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
-
+    @reviews = Review.where(:product_id => params[:id])
+    @cart = current_cart
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @product }

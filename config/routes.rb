@@ -1,4 +1,6 @@
 Store::Application.routes.draw do
+  
+
   get 'admin' => 'admin#index'
 
   controller :sessions do
@@ -14,6 +16,8 @@ Store::Application.routes.draw do
   resources :line_items
 
   resources :carts
+  
+  resources :reviews
 
   get "store/index"
   get "store/ponies"
@@ -23,6 +27,7 @@ Store::Application.routes.draw do
   get "store/clothing"
   get "store/search"
 
+  post "reviews/new"
   resources :products do
       get :who_bought, on: :member
     end

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Rating</th>
+			<th>Comment</th>
+			<th>Name</th>
+		</tr>
+	</thead>
+<%= render(@review) %>
+</table>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

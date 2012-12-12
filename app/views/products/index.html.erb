@@ -1,19 +1,23 @@
 <h1>Listing products</h1>
 
-<table>
+<table class="table">
 <% @products.each do |product| %>
   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 
     <td>
-      <%= image_tag(product.image_url, class: 'list_image') %>
+      <%= image_tag(product.image_url, class: 'list_image') %><br/>
+	  Amount Online: <%=product.amount_online%><br/>
+	  Amount Store: <%=product.amount_store%><br/>
+	  Category: <%=product.category%><br/>
+	  Featured: <% if product.featured != 0 %>True<%else%>False<%end%>
     </td>
 
     <td class="list_description">
       <dl>
         <dt><%= product.title %></dt>
         <dd><%= truncate(strip_tags(product.description),
-               length: 80) %></dd>
-		
+               length: 300) %></dd>
+
       </dl>
     </td>
 
@@ -31,3 +35,5 @@
 <br />
 
 <%= link_to 'New product', new_product_path %>
+
+<p><%= will_paginate @products %></p>

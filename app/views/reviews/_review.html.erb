@@ -1,0 +1,13 @@
+<% if review == @current_review %>
+<tr id="current_item">
+<% else %>
+<tr>
+<% end %>
+  <!--<td><%= image_tag(review.product.image_url, class: 'list_image') %>-->
+  <td><%= review.rating %></td>
+  <td><%= review.comment %></td>
+  <td><%= review.name %></td>
+  <% if session[:user_id] %>
+  <td><%= link_to 'Delete', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <%end%>
+</tr>
