@@ -32,4 +32,5 @@ class Product < ActiveRecord::Base
         find(:all, :conditions =>['title LIKE ? OR description LIKE ?', ["%#{search}%"]*2].flatten)
       end
     end
+
 end
