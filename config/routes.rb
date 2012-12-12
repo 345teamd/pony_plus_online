@@ -16,6 +16,12 @@ Store::Application.routes.draw do
   resources :carts
 
   get "store/index"
+  get "store/ponies"
+  get "store/accessories"
+  get "store/movies"
+  get "store/games"
+  get "store/clothing"
+  get "store/search"
 
   resources :products do
       get :who_bought, on: :member

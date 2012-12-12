@@ -82,7 +82,7 @@ class LineItemsController < ApplicationController
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to store_url, notice: 'Item Removed' }
+      format.html { redirect_to :back, notice: 'Item Removed' }
       format.json { head :no_content }
     end
   end

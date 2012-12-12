@@ -25,4 +25,10 @@ class Product < ActiveRecord::Base
         return false
       end
     end
+    
+    def self.search(search)
+      if search
+        find(:all, :conditions =>['title LIKE ? OR description LIKE ?', ["%#{search}%"]*2].flatten)
+      end
+    end
 end
